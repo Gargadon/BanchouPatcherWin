@@ -7,7 +7,6 @@ C:\Users\DKANTUN\AppData\Local\Temporary Projects\BanchouPatcher for Windows 1.0
 C:\Users\DKANTUN\AppData\Local\Temporary Projects\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows 1.0.pdb
 C:\Users\DKANTUN\AppData\Local\Temporary Projects\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.NombreParche.resources
 C:\Users\DKANTUN\AppData\Local\Temporary Projects\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.Resources.resources
-C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.NombreParche.resources
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.Resources.resources
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows 1.0.vbproj.GenerateResource.Cache
 C:\Users\DKANTUN\Documents\Visual Studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\bin\Debug\xdelta3.exe
@@ -29,3 +28,4 @@ C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Window
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.exe
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.xml
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.pdb
+C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.BanchouPatcher.resources

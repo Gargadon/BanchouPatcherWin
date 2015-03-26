@@ -68,13 +68,13 @@ Public Class BanchouPatcher
             fs3.Close()
             ' Terminando de crear los scripts
             ' Creando parche
-            Shell(My.Computer.FileSystem.CurrentDirectory & "\xdelta3.exe" & " -f -e -s " & informationOrigen.FullName & " " & informationDestino.FullName & " " & DirParche & "\" & PrefijoParche & ".vcdiff", , True)
+            Shell(My.Computer.FileSystem.CurrentDirectory & "\xdelta3.exe" & " -e -s """ & informationOrigen.FullName & """ """ & informationDestino.FullName & """ """ & DirParche & "\" & PrefijoParche & ".vcdiff""", , True)
             'Copiando xdelta3 para windows
             My.Computer.FileSystem.CopyFile(My.Computer.FileSystem.CurrentDirectory & "\xdelta3.exe", DirParche & "\xdelta3.exe", Microsoft.VisualBasic.FileIO.UIOption.OnlyErrorDialogs, Microsoft.VisualBasic.FileIO.UICancelOption.DoNothing)
             'Se comprimen los archivos si se requirió
             If Comprimir.CheckState = 1 Then
                 Estado.Text = "Comprimiendo archivos intermedios."
-                Shell(My.Computer.FileSystem.CurrentDirectory & "\zip.exe -j " & DirParche & "\" & PrefijoParche & ".zip " & DirParche & "\" & PrefijoParche & ".vcdiff " & DirParche & "\" & PrefijoParche & ".sh " & DirParche & "\" & PrefijoParche & ".bat " & DirParche & "\leeme.txt " & DirParche & "\" & "xdelta3.exe", , True)
+                Shell(My.Computer.FileSystem.CurrentDirectory & "\zip.exe -j """ & DirParche & "\" & PrefijoParche & ".zip"" """ & DirParche & "\" & PrefijoParche & ".vcdiff"" """ & DirParche & "\" & PrefijoParche & ".sh"" """ & DirParche & "\" & PrefijoParche & ".bat"" """ & DirParche & "\leeme.txt"" """ & DirParche & "\" & "xdelta3.exe""", , True)
                 Estado.Text = "Borrando archivos intermedios."
                 My.Computer.FileSystem.DeleteFile(DirParche & "\" & PrefijoParche & ".vcdiff")
                 My.Computer.FileSystem.DeleteFile(DirParche & "\" & PrefijoParche & ".sh")

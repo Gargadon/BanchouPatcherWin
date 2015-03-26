@@ -215,14 +215,15 @@ Partial Class BanchouPatcher
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AcercaDeToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.H), System.Windows.Forms.Keys)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Q), System.Windows.Forms.Keys)
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'OpenFileDialog1
