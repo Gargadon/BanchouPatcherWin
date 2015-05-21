@@ -4,7 +4,7 @@
   <description asmv2:iconFile="banchoupatcher.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.0.7" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.0.8" language="neutral" processorArchitecture="x86" />
     <commandLine file="BanchouPatcher for Windows.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,13 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BanchouPatcher for Windows.exe" size="141312">
-      <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.0.7" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.0.8" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>E7XB3p8gBbiCyD+9+pvPGDvcia4=</dsig:DigestValue>
+        <dsig:DigestValue>n83ne7dMNDgSKoeRfxBxNy6ITbI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

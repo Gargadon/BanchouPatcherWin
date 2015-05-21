@@ -29,3 +29,6 @@ C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Window
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.xml
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.pdb
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher.BanchouPatcher.resources
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.exe
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.xml
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.pdb

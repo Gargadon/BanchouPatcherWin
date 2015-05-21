@@ -29,3 +29,25 @@ C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Window
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.xml
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.pdb
 C:\Users\DKANTUN\documents\visual studio 2010\Projects\BanchouPatcher for Windows 1.0\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.BanchouPatcher.resources
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.AcercaDe.resources
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.BanchouPatcher.resources
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher.Resources.resources
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows 1.0.vbproj.GenerateResource.Cache
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.exe
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.xml
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.pdb
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\banchoupatcher.ico
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\bzip2.dll
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\xdelta3.exe
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\zip.exe
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\AcercaDe.resx
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\AcercaDe.Designer.vb
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\AcercaDe.vb
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\BanchouPatcher for Windows.exe.manifest
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\BanchouPatcher for Windows.application
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\BanchouPatcher for Windows.exe
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\BanchouPatcher for Windows.pdb
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\BanchouPatcher for Windows.xml
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.TrustInfo.xml
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.exe.manifest
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.application

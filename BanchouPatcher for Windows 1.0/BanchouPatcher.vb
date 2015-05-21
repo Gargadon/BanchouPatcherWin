@@ -59,7 +59,7 @@ Public Class BanchouPatcher
             fs1.Write(info1, 0, info1.Length)
             fs1.Close()
             Dim fs2 As FileStream = File.Create(DirParche & "\" & PrefijoParche & ".sh")
-            Dim info2 As Byte() = New UTF8Encoding(True).GetBytes("#!/bin/bash" & vbCrLf & "echo ""Archivo generado por BanchouPatcher.""" & vbCrLf & "xdelta3 -d -s """ & NombreOrigen & """" & " """ & PrefijoParche & ".vcdiff""" & " """ & NombreDestino & """" & vbCrLf & "if [ "" $? "" = "" 0 ""]; then echo ""Parche aplicado correctamente.""" & vbCrLf & "else" & vbCrLf & "echo ""Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio"" 1 > &2 " & vbCrLf & "exit 1" & vbCrLf & "fi")
+            Dim info2 As Byte() = New UTF8Encoding(True).GetBytes("#!/bin/bash" & vbCrLf & "echo ""Archivo generado por BanchouPatcher.""" & vbCrLf & "xdelta3 -d -s """ & NombreOrigen & """" & " """ & PrefijoParche & ".vcdiff""" & " """ & NombreDestino & """" & vbCrLf & "if [ ""$?"" = ""0"" ]; then echo ""Parche aplicado correctamente.""" & vbCrLf & "else" & vbCrLf & "echo ""Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio.""" & vbCrLf & "exit 1" & vbCrLf & "fi")
             fs2.Write(info2, 0, info2.Length)
             fs2.Close()
             Dim fs3 As FileStream = File.Create(DirParche & "\" & "leeme.txt")
