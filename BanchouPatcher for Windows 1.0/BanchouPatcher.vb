@@ -1,6 +1,8 @@
 ﻿Imports System
 Imports System.IO
 Imports System.Text
+Imports System.IO.Compression
+
 Public Class BanchouPatcher
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -52,35 +54,36 @@ Public Class BanchouPatcher
         If Origen.Text = ("Abrir archivo origen") Or Destino.Text = ("Abrir archivo destino") Or Prefijo.Text = ("Nombre del parche") Or DirDestino.Text = ("Abrir directorio destino") Then
             MsgBox("Los campos no pueden ir por defecto")
         Else
+            Estado.Text = ("Creando directorio temporal...")
+            ' Creamos el directorio temporal
+            My.Computer.FileSystem.CreateDirectory(DirParche & "\" & PrefijoParche)
             Estado.Text = ("Creando scripts del parche...")
             ' Creamos los scripts
-            Dim fs1 As FileStream = File.Create(DirParche & "\" & PrefijoParche & ".bat")
+            Dim fs1 As FileStream = File.Create(DirParche & "\" & PrefijoParche & "\" & PrefijoParche & ".bat")
             Dim info1 As Byte() = New UTF8Encoding(True).GetBytes("@echo off" & vbCrLf & "echo Archivo generado por BanchouPatcher" & vbCrLf & "xdelta3 -d -s """ & NombreOrigen & """" & " """ & PrefijoParche & ".vcdiff""" & " """ & NombreDestino & """" & vbCrLf & "pause")
             fs1.Write(info1, 0, info1.Length)
             fs1.Close()
-            Dim fs2 As FileStream = File.Create(DirParche & "\" & PrefijoParche & ".sh")
-            Dim info2 As Byte() = New UTF8Encoding(True).GetBytes("#!/bin/bash" & vbCrLf & "echo ""Archivo generado por BanchouPatcher.""" & vbCrLf & "xdelta3 -d -s """ & NombreOrigen & """" & " """ & PrefijoParche & ".vcdiff""" & " """ & NombreDestino & """" & vbCrLf & "if [ ""$?"" = ""0"" ]; then echo ""Parche aplicado correctamente.""" & vbCrLf & "else" & vbCrLf & "echo ""Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio.""" & vbCrLf & "exit 1" & vbCrLf & "fi")
+            Dim fs2 As FileStream = File.Create(DirParche & "\" & PrefijoParche & "\" & PrefijoParche & ".sh")
+            Dim info2 As Byte() = New UTF8Encoding(True).GetBytes("#!/bin/bash" & vbLf & "echo ""Archivo generado por BanchouPatcher.""" & vbLf & "xdelta3 -d -s """ & NombreOrigen & """" & " """ & PrefijoParche & ".vcdiff""" & " """ & NombreDestino & """" & vbLf & "if [ ""$?"" = ""0"" ]; then echo ""Parche aplicado correctamente.""" & vbLf & "else" & vbLf & "echo ""Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio.""" & vbLf & "exit 1" & vbLf & "fi")
             fs2.Write(info2, 0, info2.Length)
             fs2.Close()
-            Dim fs3 As FileStream = File.Create(DirParche & "\" & "leeme.txt")
+            Dim fs3 As FileStream = File.Create(DirParche & "\" & PrefijoParche & "\" & "leeme.txt")
             Dim info3 As Byte() = New UTF8Encoding(True).GetBytes(TextoLeeme)
             fs3.Write(info3, 0, info3.Length)
             fs3.Close()
             ' Terminando de crear los scripts
             ' Creando parche
-            Shell(My.Computer.FileSystem.CurrentDirectory & "\xdelta3.exe" & " -e -s """ & informationOrigen.FullName & """ """ & informationDestino.FullName & """ """ & DirParche & "\" & PrefijoParche & ".vcdiff""", , True)
+            Shell(My.Computer.FileSystem.CurrentDirectory & "\xdelta3.exe" & " -e -s """ & informationOrigen.FullName & """ """ & informationDestino.FullName & """ """ & DirParche & "\" & PrefijoParche & "\" & PrefijoParche & ".vcdiff""", , True)
             'Copiando xdelta3 para windows
-            My.Computer.FileSystem.CopyFile(My.Computer.FileSystem.CurrentDirectory & "\xdelta3.exe", DirParche & "\xdelta3.exe", Microsoft.VisualBasic.FileIO.UIOption.OnlyErrorDialogs, Microsoft.VisualBasic.FileIO.UICancelOption.DoNothing)
+            My.Computer.FileSystem.CopyFile(My.Computer.FileSystem.CurrentDirectory & "\xdelta3.exe", DirParche & "\" & PrefijoParche & "\xdelta3.exe", Microsoft.VisualBasic.FileIO.UIOption.OnlyErrorDialogs, Microsoft.VisualBasic.FileIO.UICancelOption.DoNothing)
             'Se comprimen los archivos si se requirió
             If Comprimir.CheckState = 1 Then
                 Estado.Text = "Comprimiendo archivos intermedios."
-                Shell(My.Computer.FileSystem.CurrentDirectory & "\zip.exe -j """ & DirParche & "\" & PrefijoParche & ".zip"" """ & DirParche & "\" & PrefijoParche & ".vcdiff"" """ & DirParche & "\" & PrefijoParche & ".sh"" """ & DirParche & "\" & PrefijoParche & ".bat"" """ & DirParche & "\leeme.txt"" """ & DirParche & "\" & "xdelta3.exe""", , True)
+                Dim startPath As String = DirParche & "\" & PrefijoParche
+                Dim zipPath As String = DirParche & "\" & PrefijoParche & ".zip"
+                ZipFile.CreateFromDirectory(startPath, zipPath)
                 Estado.Text = "Borrando archivos intermedios."
-                My.Computer.FileSystem.DeleteFile(DirParche & "\" & PrefijoParche & ".vcdiff")
-                My.Computer.FileSystem.DeleteFile(DirParche & "\" & PrefijoParche & ".sh")
-                My.Computer.FileSystem.DeleteFile(DirParche & "\" & PrefijoParche & ".bat")
-                My.Computer.FileSystem.DeleteFile(DirParche & "\" & "xdelta3.exe")
-                My.Computer.FileSystem.DeleteFile(DirParche & "\" & "leeme.txt")
+                My.Computer.FileSystem.DeleteDirectory(DirParche & "\" & PrefijoParche, FileIO.DeleteDirectoryOption.DeleteAllContents)
             End If
             Estado.Text = "Listo."
             MsgBox("Parche creado satisfactoriamente.")
@@ -110,7 +113,7 @@ Public Class BanchouPatcher
     End Sub
 
     Private Sub AcercaDeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AcercaDeToolStripMenuItem.Click
-        AcercaDe.Show()
+        AcercaDe.ShowDialog()
 
     End Sub
 End Class

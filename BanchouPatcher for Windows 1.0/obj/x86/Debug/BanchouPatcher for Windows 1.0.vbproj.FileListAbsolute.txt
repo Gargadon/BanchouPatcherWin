@@ -51,3 +51,4 @@ C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.TrustInfo.xml
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.exe.manifest
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Debug\BanchouPatcher for Windows.application
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\bin\Debug\BanchouPatcher for Windows.exe.config

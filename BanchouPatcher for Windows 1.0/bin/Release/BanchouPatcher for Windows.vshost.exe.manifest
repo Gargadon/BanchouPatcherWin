@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="BanchouPatcher for Windows.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="es-MX" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="BanchouPatcher for Windows.exe" version="1.0.1.1" publicKeyToken="0000000000000000" language="es-MX" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="banchoupatcher.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.0.8" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.1.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="BanchouPatcher for Windows.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,33 +43,33 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BanchouPatcher for Windows.exe" size="141312">
-      <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.0.8" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BanchouPatcher for Windows.exe" size="131584">
+      <assemblyIdentity name="BanchouPatcher for Windows" version="1.0.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>xpFXRjnkwA0pNiY7OLwjcEC+e1U=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fefZxPtnRP5u1iFLoNb9xrXlm5HJ3dhm4ePMhRoM6+0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="BanchouPatcher for Windows.exe.config" size="1365">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ag2P2kFLIwJvBgFU+Z/v+LMMPZ5+YkSV6nwfx0A0iWY=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="banchoupatcher.ico" size="15086">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>14yxZ5rxwBWn90uhw36FoBLlE9Q=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="bzip2.dll" size="69120">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>tH/Sz52w83wE5EJQhfuVPLzoFHg=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8BqIhlT5SdUFjnvFNiaFY/YZP/cDtogCxO6hwH+CZXI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="license.txt" size="7816">
@@ -77,8 +77,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>xwrxTfEeOQjfwQOXsbpLHzRmYfM=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6n0EnHcF3BOvwgLdGOGCfzSE+CEv0/p7gvxKDDY0Msk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="xdelta3.exe" size="194560">
@@ -86,17 +86,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>acrdtYJhlzvHjJcgrPQpHDLNNI4=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="zip.exe" size="237056">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>UH12ozLzZcEF5QhpKjSGtpuqCj8=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wA44rLgiZNKZSVU6Fp1SBRZmM/3VGimJABKJrU/I04Q=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
