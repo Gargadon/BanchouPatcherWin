@@ -12,10 +12,11 @@ C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher.AcercaDe.resources
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher.BanchouPatcher.resources
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher.Resources.resources
-C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows 1.1.vbproj.GenerateResource.Cache
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.vbproj.GenerateResource.Cache
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.TrustInfo.xml
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.exe.manifest
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.application
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.exe
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.xml
 C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.pdb
+C:\Users\DavidEmmanuel\Documents\BanchouPatcherWin\BanchouPatcher for Windows 1.0\obj\x86\Release\BanchouPatcher for Windows.vbprojResolveAssemblyReference.cache
